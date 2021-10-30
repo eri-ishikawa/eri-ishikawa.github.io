@@ -19,10 +19,12 @@
 
   <title>Eri Ishikawa | Graphic and UI/UX Design</title>
 
-<link href="./main.82cfd66e.css" rel="stylesheet"></head>
+<link rel="stylesheet" href="./bootstrap.min.css">
+<link rel="stylesheet" href="./ekko-lightbox.css">
+<link href="./main.82cfd66e.css" rel="stylesheet">
+</head>
 
 <body>
-
 <!-- Add your content of header -->
 <header class="">
   <div class="navbar navbar-default visible-xs">
@@ -48,7 +50,6 @@
         <li><a href="./index.html" title=""><b>Home</b></a></li>
         <li><a href="./about.html" title=""><b>About</b></a></li>
         <li><a href="./contact.html" title=""><b>Contact</b></a></li>
-
       </ul>
 
       <nav class="nav-footer">
@@ -73,49 +74,48 @@
 
 <div class="row">
   <div class="col-xs-12 col-md-12">
-
     <div class="section-container-spacer">
-        <h1>Jimotti Rebrand</h1>
-        <p><b>Challenge: </b>This was my final project for the year in computer graphic design
-          class. We chose a small business to rebrand and design a new website for. I challenged
-          myself with Jimotti, a Japanese restaurant in Sanford, FL that specializes in authentic Japanese food.</p>
-        <p><b>Solution: </b>My goal in rebranding a Japanese restaurant was to explore the common representations of Japanese-style restaurants in America while keeping the designs authentic to common representations in Japan. Jimotti’s aims to highlight the beauty and wholesomeness of Japanese cuisine in a rustic bar setting, so I kept my colors warm in red and browns. Expressive brushwork make up a big part of the branding to allude to the relaxed, informal “izakaya” bars common in Japan.</p>
-        <p><b>Deliverables: </b>Logo, brand identity, visual system, UI/UX design website (desktop and mobile)</p>
-    </div>
-
-    <div class="section-container-spacer">
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-mockup.jpg"></p>
-      <h3>Interactive Prototype</h3>
-      <p align="center"><iframe width="375" height="667"src="https://xd.adobe.com/embed/62879c6d-6edb-48c1-ae27-a02ab115c454-37d4/" frameborder="0" allowfullscreen></iframe></p>
-      <br>
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-brandwords.jpg"></p>
-
-      <h3>Logos</h3>
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-logos.jpg"></p>
-
-      <h3>Sample Pages</h3>
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-samplepage1.jpg"></p>
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-samplepage2.jpg"></p>
-
-      <h2>Process Work</h2>
-      <h3>Moodboard</h3>
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-moodboard.jpg"></p>
-
-      <h3>Previous Logo Explorations</h3>
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-prevlogos.jpg"></p>
-
-      <h3>Initial sitemap</h3>
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-sitemap.jpg"></p>
-
-      <h3>Initial wireframes</h3>
-      <p><img class="img-responsive" alt="" src="./assets/prj_jimottirebrand/jimottirebrand-prevwireframe.jpg"></p>
-
-      <h2>Credits</h2>
-      <p>Mockup courtesy of Lstore<br>
-        Brushwork illustrations courtesy of <a href="https://www.ac-illust.com/main/profile.php?id=1Y7H23E2&area=1">Futsuujin (普通人)</a></p>
+        <h1>Limbitless Solutions Team Website: Meeting Scheduler </h1>
+        <h2>Overview</h2>
+        <p><b>My Role: </b>Developed user experience and designed wireframes of interfaces, with supervision from Lead Designer</p>
+        <p><b>Problem: </b>Weekly meetings are arranged manually every semester by comparing 30+ team members' schedules. This results in hours of wasted time for the company.</p>
+        <p><b>Goals: </b>Reusing as many existing assets as reasonable, design an interface for the internal website focused on quickly identifying the best times when team members are available for weekly meetings.</p>
     </div>
   </div>
 </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <div class="section-container-spacer">
+          <a href="./assets/prj_lsimeeting/lsimeeting-mockup2.jpg" data-toggle="lightbox" data-gallery="image-gallery" data-title="Landing Screen">
+            <img class="img-responsive" src="./assets/prj_lsimeeting/lsimeeting-mockup2.jpg" class="img-fluid">
+          </a>
+          <h3>Interactive Prototype</h3>
+          <p align="center"><iframe width="800 px" height="452"src="https://xd.adobe.com/embed/c02d49ee-b2b5-462e-bc57-935a328183c0-957e/" frameborder="1" allowfullscreen></iframe></p>
+          <a href="https://xd.adobe.com/view/c02d49ee-b2b5-462e-bc57-935a328183c0-957e/"><b><center>Open prototype in a new tab.</center></b></a>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+      <script>
+        $(document).ready(function ()
+        {
+          $(document).on('click', '[data-toggle="lightbox"]', function (event)
+          {
+            event.preventDefault();
+            $(this).ekkoLightbox
+            ({
+              alwaysShowClose: true,
+              showArrows: true,
+            });
+          });
+        });
+      </script>
+
+    </div>
+  </div>
 
 
 
